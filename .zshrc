@@ -33,6 +33,7 @@ alias todo="nvim ~/notes/todo.md"
 alias notes="nvim ~/notes/divers.md"
 alias vpn="protonvpn-cli"
 alias btcasque="bluetoothctl connect 88:C9:E8:69:D6:3E"
+alias gdu="gdu -c"
 
 
 autoload -U edit-command-line
