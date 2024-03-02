@@ -183,8 +183,6 @@ bindsym XF86MonBrightnessDown exec brightnessctl set 30-
 
 #lock screen
 bindsym $mod+Control+l exec ~/.config/i3/lock.sh
-exec --no-startup-id xidlehook --not-when-fullscreen --not-when-audio --timer 900 ~/.config/i3/lock.sh ''
-exec --no-startup-id xidlehook --not-when-fullscreen --not-when-audio --timer 2000 'systemctl suspend' ''
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -234,7 +232,7 @@ bindsym $mod+r mode "resize"
 
 
 exec --no-startup-id feh --bg-fill ~/.config/i3/wallpaper.png
-exec_always --no-startup-id sh ~/.config/i3/setkeyboardlayout.sh
+exec_always --no-startup-id setxkbmap -v -layout us_qwerty-fr
 exec --no-startup-id i3-msg 'workspace 1:Term; exec /usr/bin/kitty'
 exec --no-startup-id i3-msg 'workspace 2:Web; exec /usr/bin/firefox'
 exec --no-startup-id i3-msg 'workspace 3'
@@ -242,3 +240,4 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec --no-startup-id gnome-keyring-daemon --start
 exec --no-startup-id nm-applet
 exec_always --no-startup-id dunst
+exec --no-startup-id ~/.config/i3/locktimer.sh
