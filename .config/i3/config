@@ -231,7 +231,7 @@ bindsym $mod+r mode "resize"
 
 
 
-exec --no-startup-id feh --bg-fill ~/.config/i3/wallpaper.jpg
+exec --no-startup-id feh --randomize --bg-scale ~/i3/wallpapers/*
 exec_always --no-startup-id setxkbmap -v -layout us_qwerty-fr
 exec --no-startup-id i3-msg 'workspace 1:Term; exec /usr/bin/kitty'
 exec --no-startup-id i3-msg 'workspace 2:Web; exec /usr/bin/firefox'
