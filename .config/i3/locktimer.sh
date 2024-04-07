@@ -9,6 +9,7 @@ xidlehook \
   --not-when-audio \
   --timer 300 \
     'i3lock -i ~/.config/i3/lockpaper.png -t -ef -n' \
+    ''
   --timer 10 \
     'xset dpms force off' \
   --timer 2000 \
