@@ -43,15 +43,6 @@ smart_gaps on
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex --autostart --environment i3
 
-# The combination of xss-lock, nm-applet and pactl is a popular choice, so
-# they are included here as an example. Modify as you see fit.
-
-# xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
-# screen before suspend. Use loginctl lock-session to lock your screen.
-#exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock -i ~/.config/i3/lockpaper.png -t -ef -n --nofork
-#bindsym $mod+Control+l exec 'loginctl lock-session'
-#exec --no-startup-id xidlehook --not-when-fullscreen --not-when-audio --timer 10 'loginctl lock-session' ''
-#exec --no-startup-id xidlehook --not-when-fullscreen --not-when-audio --timer 13 'xset dpms force off' ''
 
 # Setup xss-lock daemon
 exec_always --no-startup-id xset +dpms dpms 0 300 300 
@@ -234,7 +225,6 @@ bindsym $mod+r mode "resize"
 #bar {
 #        status_command i3status
 #}
-
 
 
 
