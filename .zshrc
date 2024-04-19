@@ -24,7 +24,8 @@ export PATH=$HOME/bin:/usr/local/bin:/home/antoine/.local/bin:$PATH
 export FZF_DEFAULT_COMMAND='rg --files --no-ignore-vcs --hidden'
 export TERMINAL=kitty
 
-alias ll="ls -lah --color=auto"
+alias ll="ls -lh --color=auto"
+alias lla="ls -lah --color=auto"
 alias lum="ddcutil setvcp 10 "
 alias top="bpytop"
 alias dg="cd \"\$(find * -type d | fzf)\""
