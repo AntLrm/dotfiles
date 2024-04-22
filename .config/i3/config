@@ -178,8 +178,8 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 
 
 #screenbrightness
-bindsym XF86MonBrightnessUp exec brightnessctl set +30
-bindsym XF86MonBrightnessDown exec brightnessctl set 30-
+bindsym XF86MonBrightnessUp exec brightnessctl set +10
+bindsym XF86MonBrightnessDown exec brightnessctl set 10-
 
 
 # reload the configuration file
