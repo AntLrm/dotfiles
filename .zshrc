@@ -36,6 +36,9 @@ alias vpn="protonvpn-cli"
 alias btcasque="bluetoothctl connect 88:C9:E8:69:D6:3E"
 alias gdu="gdu -c"
 alias icat="kitten icat"
+alias wifir="sudo rmmod mt7921e && sudo modprobe mt7921e"
+alias hn="hackernews_tui"
+alias wiki="wiki-tui"
 
 
 autoload -U edit-command-line
