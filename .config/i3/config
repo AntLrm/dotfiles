@@ -240,3 +240,4 @@ exec_always --no-startup-id dunst
 #exec --no-startup-id ~/.config/i3/locktimer.sh
 exec_always --no-startup-id picom
 exec_always --no-startup-id i3-battery-popup -n
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
